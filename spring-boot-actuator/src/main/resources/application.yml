@@ -11,5 +11,7 @@ endpoints:
 
 info:
    app:
-      name: spring-boot-actuator
-      version: 1.0.0
+      name: "@project.name@" #从pom.xml中获取
+      description: "@project.description@"
+      version: "@project.version@"
+      spring-boot-version: "@project.parent.version@"

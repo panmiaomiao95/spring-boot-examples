@@ -21,11 +21,11 @@ public class UserMapperTest {
 
 	@Test
 	public void testInsert() throws Exception {
-		UserMapper.insert(new UserEntity("aa", "a123456", UserSexEnum.MAN));
-		UserMapper.insert(new UserEntity("bb", "b123456", UserSexEnum.WOMAN));
-		UserMapper.insert(new UserEntity("cc", "b123456", UserSexEnum.WOMAN));
+		UserMapper.insert(new UserEntity("aa", "a123456", UserSexEnum.MAN,"aa"));
+		UserMapper.insert(new UserEntity("bb", "b123456", UserSexEnum.WOMAN,"bb"));
+		UserMapper.insert(new UserEntity("cc", "b123456", UserSexEnum.WOMAN,"cc"));
 
-		Assert.assertEquals(3, UserMapper.getAll().size());
+		Assert.assertEquals(5, UserMapper.getAll().size());
 	}
 
 	@Test
